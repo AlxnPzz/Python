@@ -10,6 +10,10 @@ Formatando valores com modificadores
 > - Esquerda
 < - Direita
 ^ - Centro
+
+.lower # tudo minusculo
+.upper # tudo maiusculo
+.title # Primeiras letras maiusculas
 """
 #:f - Número de ponto flutuante (float)
 num_1 = 10
@@ -34,5 +38,8 @@ print(f'{v2:.2f}')
 v4 = 15846
 print(f'{v2:0>10.2f}')
 
-nome2 = "Alexandre"
-print(f'{nome:#^50}')
+nome2 = "alExandRE PiazZa dE LiMa fagUndES"
+print(nome2.lower()) # tudo minusculo
+print(nome2.upper()) # tudo maiusculo
+print(nome2.title()) # Primeiras letras maiusculas
+print(f'{nome2:#^50}')
